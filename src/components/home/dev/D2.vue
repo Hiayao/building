@@ -14,7 +14,8 @@
     <!-- 先隐藏鼠标移入后显示的课程分类 -->
     <div class="dev2">
       <div v-for="item in course" :key="item.id">
-        <div v-for="item1 in item.tags" :key="item1.id">{{item1.name}}</div>
+        <!-- <div v-for="(item1,index) in item.tags" :key="index">{{item1.name}}</div> -->
+        <!-- <div v-for="(item2,index) in item.recommend_courses" :key="index">{{item2.name}}</div> -->
       </div>
     </div>
   </div>
