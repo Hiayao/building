@@ -18,19 +18,21 @@
               <img src="https://static.shiyanlou.com/frontend/dist/img/02a4001.svg" alt class="hot" />
             </div>
           </div>
-          <div class="Ab">社区 ▼</div>
-        </div>
-        <div class="ul">
-          <ul class="ul1">
-            <br />
-            <li class="li">讨论</li>
-            <li class="li">教程库</li>
-            <li class="li">直播</li>
-            <li class="li" style="border-radius: 0px 0px 5px 5px;">比赛</li>
-          </ul>
+          <div class="b1">
+            <div class="Ab">社区 ▼</div>
+            <div class="b2">
+              <div class="b3">讨论</div>
+              <div class="b3">教程库</div>
+              <div class="b3">直播</div>
+              <div class="b3">比赛</div>
+            </div>
+          </div>
         </div>
         <div class="Ac">
           <input type="text" placeholder="搜索 课程/问答" class="ipt" />
+          <div class="big">
+            <i class="iconfont icon-sousuo item3"></i>
+          </div>
         </div>
       </div>
     </div>
@@ -115,6 +117,13 @@ export default {
   justify-content: center;
   align-items: center;
 }
+.big {
+  position: absolute;
+  right: -80px;
+}
+.big:hover {
+  cursor: pointer;
+}
 .hot {
   position: absolute;
   top: 10px;
@@ -134,15 +143,13 @@ export default {
   outline: none; //点击后输入框的边框
   border: 1px solid #08bf91;
 }
-.ul {
-  width: 70px;
-  height: 50px;
-  // z-index: 3;
-  position: absolute;
-  right: 370px;
-	
+.b1 {
+  cursor: pointer;
 }
-.li {
+.b2 {
+  margin-left: -20px;
+  position: absolute;
+  background: #ffffff;
   display: none;
   border-radius: 0px 0px 5px 5px;
   box-shadow: 0px 15px 25px 15px rgba(247, 247, 247, 0.4);
@@ -153,7 +160,11 @@ export default {
   line-height: 40px;
   padding-left: 35px;
 }
-.ul:hover .li {
+.b1:hover > .b2 {
   display: block;
+}
+.b3:hover {
+  background: rgb(241, 241, 241);
+  color: #08bf91;
 }
 </style>
