@@ -155,11 +155,10 @@ export default {
 .li:hover {
   background: rgb(219, 214, 214);
 }
-.ul1 {
-  position: absolute;
-  margin-top: 50px;
-  list-style-type: none;
-	
+.b3 {
+  width: 100px;
+  line-height: 40px;
+  padding-left: 35px;
 }
 .ul:hover .li {
   display: block;
