@@ -144,16 +144,9 @@ export default {
 }
 .li {
   display: none;
-  width: 120px;
-  background: white;
-  line-height: 34px;
-  margin-left: -40px;
-  padding-left: 14px;
-	box-shadow: 0px 15px 25px 15px rgb(247, 247, 247)
-}
-
-.li:hover {
-  background: rgb(219, 214, 214);
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 0px 15px 25px 15px rgba(247, 247, 247, 0.4);
+  z-index: 3;
 }
 .b3 {
   width: 100px;
