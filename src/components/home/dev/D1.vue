@@ -1,21 +1,19 @@
 <template>
   <div class="swiper-container">
     <div class="all">
-      <div class="left"></div>
-      <div class="center">
-        <swiper ref="mySwiper" :options="swiperOptions">
-          <swiper-slide v-for="(item,index) in pics" :key="index">
-            <img :src="item.picture_url" alt  class="pic"/>
-          </swiper-slide>
+      <swiper ref="mySwiper" :options="swiperOptions">
+        <swiper-slide v-for="(item,index) in pics" :key="index">
+          <div class="lunbo" :style="{background:item.background_color}">
+            <img :src="item.picture_url" alt class="pic" />
+          </div>
+        </swiper-slide>
 
-          <div class="swiper-pagination" slot="pagination"></div>
-        </swiper>
-        <div class="swiper-button-prev"></div>
-        <!--左箭头。如果放置在swiper-container外面，需要自定义样式。-->
-        <div class="swiper-button-next"></div>
-        <!--右箭头。如果放置在swiper-container外面，需要自定义样式。-->
-      </div>
-      <div class="right"></div>
+        <div class="swiper-pagination" slot="pagination"></div>
+      </swiper>
+      <div class="swiper-button-prev"></div>
+      <!--左箭头。如果放置在swiper-container外面，需要自定义样式。-->
+      <div class="swiper-button-next"></div>
+      <!--右箭头。如果放置在swiper-container外面，需要自定义样式。-->
     </div>
   </div>
 </template>
@@ -41,8 +39,7 @@ export default {
         autoplay: true,
         navigation: {
           nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-          
+          prevEl: ".swiper-button-prev"
         }
         // Some Swiper option/callback...
       }
@@ -75,20 +72,7 @@ export default {
   height: 380px;
   display: flex;
 }
-.left {
-  width: 370px;
-  height: 380px;
-  background: pink;
-}
-.center {
-  width: 720px;
-  height: 380px;
-}
-.right {
-  width: 150px;
-  height: 380px;
-  background: pink;
-}
+
 .swiper-container {
   --swiper-theme-color: #ffffff; /* 设置Swiper风格 */
   --swiper-navigation-color: #cdd6cf; /* 单独设置按钮颜色 */
@@ -96,13 +80,22 @@ export default {
 }
 
 .swiper-button-prev {
-    left:380px !important;
+  left: 380px !important;
 }
 .swiper-button-next {
-    right: 160px !important ;
+  right: 160px !important ;
 }
 .pic {
-    width: 720px;
-    height: 380px;
+  width: 930px;
+  height: 380px;
+  padding-left: 160px;
+}
+.swiper-pagination-bullets {
+  left: 92px;
+}
+.lunbo {
+  width: 1240;
+  height: 100%;
+  z-index: 4;
 }
 </style>
