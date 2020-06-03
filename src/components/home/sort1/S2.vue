@@ -65,11 +65,11 @@ export default {
 }
 .picture {
   width: 200px;
-  height: 140px;
+  height: 143px;
   border: 0.5px solid #f9f9f9;
   border-radius: 8px 8px 8px 8px;
   &:hover{
-      box-shadow: 0px 5px 20px 0px #999;
+      box-shadow: 0px 5px 10px 0px rgb(190, 188, 188);
       cursor: pointer;
   }
 }
@@ -93,5 +93,7 @@ export default {
   justify-content: center;
   background: white;
   padding-left: 10px;
+  border: 0.5px solid #f9f9f9;
+  border-radius:  0px 0px 8px 8px;
 }
 </style>

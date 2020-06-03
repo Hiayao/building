@@ -63,6 +63,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 3;
 }
 .courseDiv {
   border-bottom: 1px solid rgba(225, 225, 225, 0.5);
