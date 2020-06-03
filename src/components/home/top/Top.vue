@@ -3,6 +3,7 @@
 	 <div class="All">
 		 <T1></T1>
 		 <T2></T2>
+		 <T3></T3>
 	 </div>
 
  </div>
@@ -11,12 +12,13 @@
 <script>
 import T1 from '../top/T1'
 import T2 from '../top/T2'
+import T3 from '../top/T3'
  export default {
 	 name: '',
 	 props: {
 	 },
 	 components: {
-T1,T2
+T1,T2,T3
 	 },
 	 data () {
 		 return {
